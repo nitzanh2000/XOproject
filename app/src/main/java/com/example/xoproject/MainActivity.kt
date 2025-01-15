@@ -74,7 +74,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         updateBoard()
-
     }
 
     private fun handleMove(row: Int, col: Int) {
@@ -88,6 +87,7 @@ class MainActivity : AppCompatActivity() {
                     Result.O_SYMBOL -> "O is the Winner!"
                     Result.DRAW -> "It's a draw!"
                 }
+
                 Toast.makeText(this, message, Toast.LENGTH_LONG).show()
                 game.reset()
             }
@@ -109,6 +109,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
-
 }
